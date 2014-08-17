@@ -14,7 +14,7 @@ Getting Started :
     git clone https://github.com/munjeni/android_device_sony_lotus.git -b cm-11.0 lotus
     cd lotus
 
-Now connect your phone which have runing CM11 :
+Now connect your phone which have runing CM11 (or upload my cm11 build zip file and uncoment line in extract_files.sh) :
 
     ./extract-files.sh
     cd ../../..
