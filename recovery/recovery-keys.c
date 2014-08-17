@@ -74,9 +74,6 @@ int device_handle_key(int key_code, int visible) {
                 return HIGHLIGHT_UP;
 
             case KEY_POWER:
-#ifndef XPERIA_CWM_TOUCH
-                if (ui_get_showing_back_button()) {
-#endif
                     return SELECT_ITEM;
 #ifndef XPERIA_CWM_TOUCH
                 }
@@ -101,10 +98,6 @@ int device_handle_key(int key_code, int visible) {
             case KEY_END:
             case KEY_BACKSPACE:
             case KEY_SEARCH:
-                if (ui_get_showing_back_button()) {
-                    vibrate(VIBRATOR_TIME_MS);
-                    return SELECT_ITEM;
-                }
                 if (!ui_root_menu) {
                     vibrate(VIBRATOR_TIME_MS);
                     return GO_BACK;

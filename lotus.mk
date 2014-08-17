@@ -66,7 +66,8 @@ PRODUCT_PACKAGES += \
     bluetoothd-snoop \
     bluetooth.default \
     audio.a2dp.default \
-    haltest
+    haltest \
+    audio.sco.default
 
 # Bluez 5.11 btmon
 PRODUCT_PACKAGES += \
@@ -85,7 +86,9 @@ PRODUCT_PACKAGES += \
     sdptool \
     ciptool \
     bccmd \
-    btproxy
+    btproxy \
+    btmgmt \
+    avtest
 
 # bt profile test (apk)
 #PRODUCT_PACKAGES += \
